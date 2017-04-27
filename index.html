@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>隐身侠</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script language="javascript">
+        function ScrollImgLeft() {
+            var speed = 16;
+            var scroll_begin = document.getElementById("scroll_begin");
+            var scroll_end = document.getElementById("scroll_end");
+            var scroll_div = document.getElementById("scroll_div");
+            scroll_end.innerHTML = scroll_begin.innerHTML
+            function Marquee() {
+                if (scroll_end.offsetWidth - scroll_div.scrollLeft <= 0)
+                    scroll_div.scrollLeft -= scroll_begin.offsetWidth
+                else
+                    scroll_div.scrollLeft++
+            }
+            var MyMar = setInterval(Marquee, speed)
+            scroll_div.onmouseover = function () { clearInterval(MyMar) }
+            scroll_div.onmouseout = function () { MyMar = setInterval(Marquee, speed) }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="head_wrap">
+            <div class="logo">
+                <img src="images/logo.png" />
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">首页</a></li>
+                    <li><a href="">产品</a></li>
+                    <li><a href="">案例</a></li>
+                    <li><a href="">价格</a></li>
+                    <li><a href="">下载</a></li>
+                    <li><a href="">私有云</a></li>
+                    <li><a href="">帮助中心</a></li>
+                </ul>
+            </div>
+            <div class="actions rf ">
+                <a href="" class="lf">注册</a>
+                <a href="" class="rf">登录</a>
+            </div>
+        </div>
+    </div>
+    <!--header结束-->
+    <!--展示区-->
+    <div class="show">
+        <div class="show_picture">
+            <div class="show_picture_wrap">
+                <div class="left">
+                    <p>隐身侠企业云</p>
+                    <div><span>让你</span><b>&nbsp;一元登云</b></div>
+                    <a href="" class="left_d">一键试用</a>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>数千家大客户认可</li>
+                        <li>1元/1人/1月/1G</li>
+                        <li>不只是企业云盘</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="show_center">
+            <span>全国许多大客户在用我们</span>
+        </div>
+        <div id="show_down" class="show_down">
+            <div class="container">
+                <div class="one">
+                    <a class="left_arrow" href=""></a>
+                </div>
+                <div class="three">
+                    <div id="scroll_div" class="scroll_div">
+                        <div id="scroll_begin">
+                            <ul>
+                                <li><img src="images/ruantong.png"></li>
+                                <li><img src="images/tianqing.png"></li>
+                                <li><img src="images/yanchang.png"></li>
+                                <li><img src="images/yongyou.png"></li>
+                                <li><img src="images/zheshang.png"></li>
+                                <li><img src="images/dianwang.png"></li>
+                                <li><img src="images/fenghuang.png"></li>
+                                <li><img src="images/guanghua.png"></li>
+                                <li><img src="images/guangxi.png"></li>
+                                <li><img src="images/haier.png"></li>
+                                <li><img src="images/haihang.png"></li>
+                                <li><img src="images/hangmei.png"></li>
+                                <li><img src="images/huarun.png"></li>
+                                <li><img src="images/hepalink.png"></li>
+                                <li><img src="images/meidi.png"></li>
+                            </ul>
+                        </div>
+                        <div id="scroll_end"></div>
+                    </div>
+                </div>
+                <div class="two">
+                    <a class="right_arrow" href=""></a>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            ScrollImgLeft();
+        </script>
+    </div>
+    <!--展示区结束-->
+    <!--内容区-->
+    <div class="content">
+        <div class="content_up">
+            <!--文件存储管理-->
+            <div class="content_up_wrap">
+                <div class="content_up_wrap_left">
+                    <h3>文件存储管理</h3>
+                    <hr />
+                    <ul>
+                        <li><img src="images/storage_1.png">企业知识信息库，云端无限空间</li>
+                        <li><img src="images/storage_2.png">文件存放、查看、分享一体化方案</li>
+                        <li><img src="images/storage_3.png">文件历史版本自动管理,随时查看</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="" class="experience">立即体验</a>
+                        <a href="" class="look">查看详情</a>
+                    </div>
+                </div>
+                <div class="content_up_wrap_right">
+                    <img src="images/storage_4.png">
+                </div>
+            </div>
+        </div>
+        <!--文件存储管理结束-->
+        <div class="content_center">
+            <!--协同-->
+            <div class="content_center_wrap">
+                <div class="content_center_wrap_left">
+                    <img src="images/coop_1.png">
+                </div>
+                <div class="content_center_wrap_right">
+                    <h3>协同</h3>
+                    <hr />
+                    <ul>
+                        <li><img src="images/coop_2.png">群组存放部门文件，丰富权限灵活设置</li>
+                        <li><img src="images/coop_3.png">个人创建协同项目，快速响应团队合作</li>
+                        <li><img src="images/coop_4.png">客户沟通发送外链，大附件不再是烦恼</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="" class="experience">立即体验</a>
+                        <a href="" class="look">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--协同结束-->
+        <div class="content_down">
+            <!--移动办公开始-->
+            <div class="content_down_wrap">
+                <div class="content_down_wrap_left">
+                    <h3>移动办公</h3>
+                    <hr />
+                    <ul>
+                        <li><img src="images/mobile_2.png">全平台支持，随时随地随心工作</li>
+                        <li><img src="images/mobile_3.png">在线预览文档、图片、视频、音频</li>
+                        <li><img src="images/mobile_4.png">关键信息自动备份，一切尽在掌握</li>
+                    </ul>
+                    <div class="buttons">
+                        <a href="" class="experience">立即体验</a>
+                        <a href="" class="look">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--移动办公结束-->
+        <div class="security">
+            <!--安全开始-->
+            <div class="security_wrap">
+                <div class="security_wrap_up">
+                    <h3>安全</h3>
+                    <hr>
+                </div>
+                <div class="security_wrap_center">
+                    <ul>
+                        <li style="margin-right:196px"><img src="images/safe_1.png" />
+                            <p>精细划分，保障企业文件安全</p>
+                        </li>
+                        <li style="margin-right:196px"><img src="images/safe_2.png" />
+                            <p>异地多点备份，存储稳固</p>
+                        </li>
+                        <li><img src="images/safe_3.png" />
+                            <p>传输存储全程加密，信息安全绝不松懈</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="security_wrap_down">
+                    <div class="buttons">
+                        <a href="" class="experience">立即体验</a>
+                        <a href="" class="look">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--安全结束-->
+    </div>
+    <!--内容区结束-->
+    <!--每个行业都在用我们-->
+    <div class="industry">
+        <div class="industry_up">
+            <h3>每个行业都在用我们</h3>
+            <a href="" class="market">查看行情</a>
+        </div>
+    </div>
+    <!--每个行业都在用我们结束-->
+    <!--注册体验开始-->
+    <div class="register">
+        <div class="register_wrap">
+            <h3>马上注册体验</h3>
+            <p>选择我们，选择最好用的企业云盘，现在立即注册吧，新的办公时代即将开启!</p>
+            <a href="">立即注册</a>
+        </div>
+    </div>
+    <!--注册体验结束-->
+    <!--底部版权区开始-->
+    <div class="footer">
+        <div class="footer_wrap">
+            <div class="footer_wrap_up">
+                <div class="footer_wrap_up_left">
+                    <ul>
+                        <li><a href="">关于我们</a></li>
+                        <li><a href="">加入我们</a></li>
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">服务条款</a></li>
+                        <li><a href="">客户端下载</a></li>
+                        <li><a href="">个人版</a></li>
+                    </ul>
+                </div>
+                <div class="footer_wrap_up_right">
+                    <ul>
+                        <li><img src="images/foot-tel.png">
+                            <span>010-88820518</span>
+                        </li>
+                        <li><img src="images/foot-qq.png">
+                            <span>4008195819</span>
+                        </li>
+                        <li><img src="images/foot-email.png">
+                            <span>ysx@echance.cn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_wrap_down">
+                <img src="images/foot-home.png">
+                <p>Copy&copy;2016北京意畅高科软件有限公司</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
